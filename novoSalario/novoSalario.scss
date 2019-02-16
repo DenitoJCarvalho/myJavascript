@@ -1,0 +1,49 @@
+@import 'partials/variables'; //importando as variáveis
+@import 'partials/bases'; //importando bases
+
+//container
+fieldset {
+    width: 320px;
+    border: 0;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, $blue, $lightpurple);
+}
+
+//Titulo
+label, h3 {
+    color: $white;
+    text-shadow: 2px 2px 2px $lightgreen;
+}
+
+//botão
+button {
+    border: 1px solid $lightgreen;
+    font-weight: $bold;
+    background: $lightgreen;
+    color: $white;
+    height: 30px;
+    box-shadow: 2px 2px 2px $black;
+    outline: $none;
+
+    &:hover {
+        height: 35px;
+    }
+}
+/* Formatação da seção resposta */
+section {
+    border: none;
+    @extend %display-1;
+    justify-content: $left;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px $lightgreen;
+    letter-spacing: 1px;
+    color: $white;
+    width: 240px;
+    height: 40px;
+    margin: -42px 0 0 90px;
+}
+
+input[type=text] {
+    outline: $none;
+    font-weight: $bold;
+}

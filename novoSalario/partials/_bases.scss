@@ -1,0 +1,13 @@
+//bases
+
+@import 'variables'; //importando as variáveis
+
+//display's bases
+
+%display-1 {
+    display: $flex;
+    flex-flow: $r-w;
+    justify-content: $center;
+    align-items: $center;
+}
+
