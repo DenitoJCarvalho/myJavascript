@@ -1,0 +1,36 @@
+body {
+    background: rgb(87, 145, 228);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+section {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.345);
+}
+
+footer {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-style: italic;
+}
+
+.erro {
+    text-align: center;
+    font-weight: bold;
+    color: rgba(247, 10, 10, 0.849);
+}
+
+.msg {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(29, 247, 40);
+}

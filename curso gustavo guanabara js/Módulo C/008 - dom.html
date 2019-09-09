@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=ddevice-width, initial-scale=1.0">
+
+    <title>Curso Javascript</title>
+    <style>
+        body {
+            background: rgba(120, 111, 89, 1);
+            color: rgba(255, 255, 255, 1);
+            font: normal 16pt Arial;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Manipulando DOM </h1>
+
+    <p> Aqui vai o resultado</p>
+
+    <p>Apredendo a usar o <strong>DOM</strong> em Javascript. </p>
+
+    <div id="msg">Clique em mim</div>
+    <br>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        var corpo = window.document.body
+        var msg = document.getElementById('msg')
+
+        window.document.write(`Está escrito assim : ${p1.innerHTML}`)
+        p1.style.color = 'blue'
+
+        corpo.style.background = 'orange'
+
+        msg.style.color = 'red'
+
+        msg.innerHTML = `aguardando`
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=ddevice-width, initial-scale=1.0">
+
+    <title>Curso Javascript</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: normal 16pt Arial;
+            background: rgba(92, 166, 226, 1);
+        }
+        
+        h1 {
+            color: rgba(225, 225, 225, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>004 - Criando o seu primeiro script</h1>
+    <section>
+
+    </section>
+    <script>
+        var answer = document.querySelector('section')
+        window.alert('Mi primera mensaje')
+        window.confirm('I love JS')
+        var txt = window.prompt("¿Primer nombre?")
+        var txtAp = window.prompt("¿Apellido?")
+
+        answer.innerHTML = txt + txtAp;
+    </script>
+</body>
+
+</html>

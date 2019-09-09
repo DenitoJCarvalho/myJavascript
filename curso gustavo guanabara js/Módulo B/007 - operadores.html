@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=ddevice-width, initial-scale=1.0">
+
+    <title>Curso Javascript</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: normal 12pt Arial;
+            background: rgba(92, 166, 226, 1);
+        }
+        
+        h1 {
+            color: rgba(225, 225, 225, 1);
+        }
+        
+        #answer {
+            border: 1px solid;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            width: 520px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>007 - Operadores</h1>
+
+
+    <input type="text" id="f-1">
+    <br><br>
+    <input type="text" id="f-2">
+    <br> <br>
+    <button>Verificar</button>
+    <br><br>
+    <section id="answer"></section>
+
+
+    <script>
+        var n1 = document.querySelector("input[id='f-1']")
+        var n2 = document.querySelector("input[id='f-2']")
+        var v = document.querySelector('button')
+        var r = document.querySelector('#answer')
+
+        v.addEventListener('click', function() {
+            n1 = parseFloat(n1.value)
+            n2 = parseFloat(n2.value)
+            let x = n1 > n2 ? `O número maior é ${n1}` : `O número menor é ${n2}`
+            r.innerHTML = x
+            console.log(x)
+        })
+    </script>
+</body>
+
+</html>

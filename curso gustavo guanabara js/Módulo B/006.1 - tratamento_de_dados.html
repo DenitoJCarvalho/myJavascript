@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=ddevice-width, initial-scale=1.0">
+
+    <title>Curso Javascript</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: normal 16pt Arial;
+            background: rgba(92, 166, 226, 1);
+        }
+        
+        h1 {
+            color: rgba(225, 225, 225, 1);
+        }
+        
+        #salida {
+            border: 1px solid;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            width: 520px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>006.1 - Tratamento de dados</h1>
+    <h3>Formatando strings</h3>
+    <output id="salida"></output>
+
+
+    <section>
+
+    </section>
+    <script>
+        var s = `Javascript`
+        var n1 = Number(window.prompt("Nº1: "))
+        var n2 = Number(window.prompt("Nº2: "))
+        var t = n1 + n2
+
+
+        document.querySelector('h3').innerHTML = `Estou fazendo o curso de ${s}`
+
+        document.querySelector("#salida").innerHTML = `A soma de ${n1} mais ${n2} é igual a ${t}`
+
+        /*
+        length - conta quantas caracteres tem uma string
+        toUpperCase() transforma tudo em maiuscula
+        toLowerCase() transforma tudo em minusculo
+        */
+    </script>
+</body>
+
+</html>

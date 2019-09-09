@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=ddevice-width, initial-scale=1.0">
+
+    <title>Curso Javascript</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: normal 16pt Arial;
+            background: rgba(92, 166, 226, 1);
+        }
+        
+        h1 {
+            color: rgba(225, 225, 225, 1);
+        }
+        
+        #salida {
+            border: 1px solid;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            width: 520px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>006.2 - Tratamento de dados</h1>
+    <h3>Formatando números</h3>
+    <input type="text" id="num">
+    <section id="salida"></section>
+    <button>Click</button>
+
+
+    <section>
+
+    </section>
+    <script>
+        var n1 = document.querySelector("input[id='num']")
+        var btn = document.querySelector('button')
+        var r = document.querySelector('#salida')
+        btn.addEventListener('click', function() {
+            r.innerHTML = parseFloat(n1.value).toFixed(2).replace('.', ',').toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+            })
+            console.log(n1.value)
+        })
+    </script>
+</body>
+
+</html>

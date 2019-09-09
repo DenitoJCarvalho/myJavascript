@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curso Javascript</title>
+    <style>
+        body {
+            background: rgba(120, 111, 89, 1);
+            color: rgba(255, 255, 255, 1);
+            font: normal 16pt Arial;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Somando valores</h1>
+    <input type="text" name="txt1" id="txt1"> +
+    <input type="text" name="txt2" id="txt2">
+    <br><br>
+    <input type="button" value="Somar" id="clicar">
+    <br><br>
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar() {
+            var tn1 = document.querySelector('input#txt1')
+            var tn2 = document.querySelector('input#txt2')
+            var r = document.querySelector('#res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            r.innerHTML = `A soma entre ${n1} + ${n2} é igual a ${s}`
+            console.log(r.innerHTML = `A soma entre ${n1} + ${n2} é igual a ${s}`)
+        }
+    </script>
+</body>
+
+</html>

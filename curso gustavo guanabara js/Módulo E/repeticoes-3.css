@@ -1,0 +1,54 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    background: rgba(94, 150, 233, 1);
+}
+
+header,
+section,
+div,
+footer {
+    /*border: 1px solid;*/
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+
+h2,
+p {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+section {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    padding: 5px;
+}
+
+section div {
+    margin-top: 20px;
+}
+
+div#saida {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    text-transform: lowercase;
+}
