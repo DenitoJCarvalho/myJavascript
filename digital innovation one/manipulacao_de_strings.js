@@ -23,5 +23,5 @@ const fatiaTexto2 = 'Texto'.slice(0, -1)
 console.log(`\nÚltima letra de uma string: ${fatiaTexto2}`)
 
 //Retorna n caracteres a partir de uma posição
-const b = 'Texto'.substr(0, 2)
+const b = 'Texto'.substr(0, 3)
 console.log(`\nAs duas primeiras letras são ${b}`)

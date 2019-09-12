@@ -18,5 +18,5 @@ console.log(`${user[prop]}\n`)
 user.lastname = 'Carvalho'
 console.log(`${user.lastname}\n`)
 console.log(`${user.name} ${user.lastname}`)
-    //Deletando uma propriedade
+    //Deletando uma propriedade  
 delete user.name

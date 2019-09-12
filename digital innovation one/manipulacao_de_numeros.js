@@ -16,7 +16,7 @@ console.log(`\nString parseada para float ${numFloat} tipo: ${typeof(numFloat)}`
 const numInt = parseInt(num)
 console.log(`\nString parseada para integer ${numInt} tipo: ${typeof(numInt)}`)
 
-//Usando number
+//Usando a função Number()
 const numText = '12.90'
 const numAlt = Number(numText)
 

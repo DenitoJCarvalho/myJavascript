@@ -1,3 +1,4 @@
+//TIPOS DE VARIÁVEIS EM JS
 const text = 'texto' //String
 console.log(typeof(text))
 const num = 10 //number
