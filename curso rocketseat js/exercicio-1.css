@@ -1,0 +1,12 @@
+.square {
+    border: 1px hidden;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 12px;
+    margin: 5px 10px;
+    background: rgba(247, 24, 24, 1);
+}

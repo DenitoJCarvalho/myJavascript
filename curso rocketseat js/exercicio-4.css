@@ -1,0 +1,16 @@
+.answer {
+    border: 1px solid;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: flex-start;
+    width: 220px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
